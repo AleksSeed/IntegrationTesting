@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: liquibase/changesets/17062023_createtable_employee.yml
+  - include:
+      file: liquibase/changesets/17062023_createtable_position.yml
+  - include:
+      file: liquibase/changesets/17062023_createtable_user.yml
