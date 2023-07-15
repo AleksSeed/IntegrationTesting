@@ -5,8 +5,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import ru.skypro.lessons.springboot.springboot.dto.UserDto;
+import ru.skypro.lessons.springboot.springboot.dto.UserMapper;
 import ru.skypro.lessons.springboot.springboot.repository.UserRepository;
-import ru.skypro.lessons.springboot.springboot.service.UserMapper;
 
 @Service
 public class SecurityUserDetailsService implements UserDetailsService {

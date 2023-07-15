@@ -5,8 +5,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 public interface ReportService {
     void putReport(MultipartFile file);
-
     int putMainReport();
-
     Resource getJson(int id);
 }

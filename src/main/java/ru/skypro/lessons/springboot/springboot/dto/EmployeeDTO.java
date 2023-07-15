@@ -16,7 +16,7 @@ public class EmployeeDTO {
     private Integer id;
     private String name;
     private Integer salary;
-    private Integer position;
+    private String position;
 
     public static EmployeeDTO fromEmployee(Employee employee) {
         EmployeeDTO employeeDTO = new EmployeeDTO();
@@ -24,7 +24,7 @@ public class EmployeeDTO {
         employeeDTO.setName(employee.getName());
         employeeDTO.setSalary(employee.getSalary());
         if (Optional.ofNullable(employee.getPosition()).isPresent()) {
-            employeeDTO.setPosition(employee.getPosition().getId());
+            employeeDTO.setPosition(employee.getPosition().toString());
         }
         return employeeDTO;
     }

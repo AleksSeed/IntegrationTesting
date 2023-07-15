@@ -34,3 +34,6 @@ build/
 /.mvn/
 /.gitignore
 /src/test/
+/mvnw
+/mvnw.cmd
+/myApp.log

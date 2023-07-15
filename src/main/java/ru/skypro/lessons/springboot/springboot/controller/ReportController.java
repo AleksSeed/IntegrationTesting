@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import ru.skypro.lessons.springboot.springboot.service.ReportService;
 
-
 @RestController
 @RequiredArgsConstructor
 public class ReportController {
@@ -18,7 +17,7 @@ public class ReportController {
     @PostMapping(value = "/employees/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public void putReport(@RequestParam("file") MultipartFile file) {
         System.out.println("Размер файла: " + file.getSize());
-        reportService.putReport( file);
+        reportService.putReport(file);
     }
 
     @PostMapping("/report")

@@ -1,8 +1,6 @@
-package ru.skypro.lessons.springboot.springboot.service;
-
+package ru.skypro.lessons.springboot.springboot.dto;
 
 import org.springframework.stereotype.Component;
-import ru.skypro.lessons.springboot.springboot.dto.UserDto;
 import ru.skypro.lessons.springboot.springboot.pojo.User;
 
 @Component
@@ -15,5 +13,4 @@ public class UserMapper {
         userDto.setRole(user.getRole());
         return userDto;
     }
-
 }
