@@ -1,9 +1,7 @@
 package ru.skypro.lessons.springboot.springboot.pojo;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import lombok.experimental.Accessors;
 
 import java.util.Objects;
@@ -14,6 +12,8 @@ import java.util.Objects;
 @Setter
 @ToString
 @Accessors(chain = true)
+@AllArgsConstructor
+@NoArgsConstructor
 public class Position {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,4 +32,5 @@ public class Position {
     public int hashCode() {
         return Objects.hash(id);
     }
+
 }

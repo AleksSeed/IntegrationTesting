@@ -52,7 +52,7 @@ public class EmployeeController {
     }
 
     @GetMapping
-    public List<EmployeeDTO> getEmployeesOnPosition(@RequestParam(value = "position", required = false) Integer position) {
+    public List<EmployeeDTO> getEmployeesOnPosition(@RequestParam(value = "position", required = false) String position) {
         return employeeService.getEmployeesOnPosition(position);
     }
 
@@ -68,4 +68,3 @@ public class EmployeeController {
         return employeeService.getEmployeePage(PageRequest.of(page, size));
     }
 }
-
